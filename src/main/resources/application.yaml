@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: graphql-books
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+  graphql:
+    graphiql:
+      enabled: true
+#  threads:
+#    virtual:
+#      enabled: true
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+    correlation: 
+  include-application-name: false
