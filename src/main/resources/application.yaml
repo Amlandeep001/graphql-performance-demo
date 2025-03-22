@@ -13,6 +13,9 @@ spring:
 #  threads:
 #    virtual:
 #      enabled: true
+  output:
+    ansi:
+      enabled: always
 
 logging:
   pattern:
