@@ -11,4 +11,8 @@ public interface AuthorRepository extends JpaRepository<Author, Long>
 
 	@Query("SELECT a FROM Author a LEFT JOIN FETCH a.books")
 	List<Author> findAllWithBooks();
+
+	/*@Override
+	@EntityGraph(attributePaths = "books")
+	List<Author> findAll();*/
 }
