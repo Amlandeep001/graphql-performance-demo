@@ -4,7 +4,7 @@ A modern GraphQL API showcasing best practices for building scalable and efficie
 
 **Project Requirements**
 
-* Java 23
+* Java 21
 * Maven 3.6+
 * Docker and Docker Compose
 * PostgreSQL 17+
@@ -53,7 +53,7 @@ while providing a flexible and efficient way to query data.
 
 ## Getting Started
 
-* Project setup with Spring Boot 3.4.1
+* Project setup with Spring Boot 3.5+
 * Essential dependencies:
   * Spring Web 
   * Spring for GraphQL
@@ -406,3 +406,10 @@ maintainable API that better serves both frontend and backend developers.
   - Unions - 40 min
   - Performance & Observability - 55 min
   - Data Integration - 60min
+ 
+  ## Connect with PostGres
+
+  - >docker-compose up -d : to run the docker compose file without blocking the terminal
+    >docker exec -it <container-id> bash: to get inside the container
+    >psql -h localhost -U postgres -p 5432 -d books: connect with the database(books)
+    >select * from book; : run queries 
