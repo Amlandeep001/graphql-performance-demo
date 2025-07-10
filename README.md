@@ -407,9 +407,9 @@ maintainable API that better serves both frontend and backend developers.
   - Performance & Observability - 55 min
   - Data Integration - 60min
  
-  ## Connect with PostGres
+## Connect with PostGres
 
-  - >docker-compose up -d : to run the docker compose file without blocking the terminal
+    >docker-compose up -d : to run the docker compose file without blocking the terminal
     >docker exec -it <container-id> bash: to get inside the container
     >psql -h localhost -U postgres -p 5432 -d books: connect with the database(books)
     >select * from book; : run queries 
